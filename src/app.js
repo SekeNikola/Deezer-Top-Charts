@@ -1,8 +1,11 @@
-const links = document.querySelectorAll('.dropdown-content a')
+const links = document.querySelectorAll('a')
 console.log(links);
 
 for (let i = 0; i < links.length; i++) {
     links[i].addEventListener("click", function () {
+    document.getElementById('main_content-title').style.display = 'none';
+    document.getElementsByClassName('navbar')[0].style.display = 'block';
+
         if (links[i].className === 'ww') {
             link = "https://api.deezer.com/playlist/3155776842"
         }
@@ -16,12 +19,11 @@ for (let i = 0; i < links.length; i++) {
             .then(res => res.json())
             .then((data) => {
                 console.log(data);
+;
 
                 let output = ''
 
                 data.tracks.data.forEach(track => {
-                    // console.log(data);
-
                     output += `<div class="artist">
                         <a href="${track.artist.link}"><img src="${track.album.cover_medium}"></img></a>
                         <div class="info">

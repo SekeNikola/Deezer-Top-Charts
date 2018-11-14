@@ -1,26 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
 </head>
+
 <body>
-        <div class="navbar">
-                <div class="dropdown">
-                  <button class="dropbtn">Charts
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                    <a href="#" class="ww">TOP Worldwide</a>
-                    <a href="#" class="sr">TOP Serbia</a>
-                    <a href="#" class="usa">TOP USA</a>
-                  </div>
+  <main>
+
+    <div id="main_content">
+        <nav>
+            <div class="navbar">
+              <div class="dropdown">
+                <button class="dropbtn">Charts
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#" class="ww">TOP Worldwide</a>
+                  <a href="#" class="sr">TOP Serbia</a>
+                  <a href="#" class="usa">TOP USA</a>
                 </div>
               </div>
-    <div id="output"></div>
+            </div>
+          </nav>
+        <div id="output"></div>
+
+      <div id="main_content-title">
+      <h1>Discover Latest Hits</h1>
+
+        <div id="boxes">
+          <div id="boxes_box">
+              <a href="#" class="sr">
+            <img src="/src/img/serbia.jpg" alt="">
+        </a>
+        <span>TOP SERBIA CHART</span>
+      </div>
+      <div id="boxes_box">
+        <a href="#" class="ww">
+            <img src="/src/img/ww.jpg" alt="">
+        </a>
+        <span>TOP WORLD CHART</span>
+      </div>
+      <div id="boxes_box">
+        <a href="#" class="usa">
+            <img src="/src/img/usa.jpg" alt="">
+        </a>
+        <span>TOP SERBIA USA</span>
+      </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
+
 </html>
